@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav class="barra-nav">
+            <ul class="ul-nav">
+                <li class="li-nav"> <a href="formulario.html">Contacto</a></li>
+                <li class="li-nav"> <a href="promociones.html">Promociones</a></li>
+                <li class="li-nav"> <a href="paquetes.html">Paquetes</a></li>
+                <li class="li-nav"> <a href="atracciones.html">Atracciones</a></li>
+                <li class="li-nav"> <a href="masSitios.html">Ciudad</a></li>
+                <li class="li-nav"> <a href="index.html">Inicio</a></li>
+                <li><img src="img/logo.png" width="50" alt="logo"/></li>
+            </ul> 
+        </nav>
+    </header>
+    <section class="content_formulario">
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462565.19765996566!2d54.94754391379438!3d25.075085289835396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDub%C3%A1i%20-%20Emiratos%20%C3%81rabes%20Unidos!5e0!3m2!1ses!2sar!4v1580136117427!5m2!1ses!2sar" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <section class="formulario">
+            <h2>Nosotros te avisamos</h2>
+            <p>Sé el primero en enterarte de todas las novedades</p>
+            <form action="gracias.html" method="post">
+                <input class="input-text" type="text" name="Nombre" placeholder="Nombre"><br/>
+                <input class="input-text" type="text" name="Apellido" placeholder="Apellido"><br/>
+                <input class="input-text" type="email" name="email" placeholder="Correo"><br/>
+                <input class="input-text" type="tel" name="num" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Numero" > <br/>
+                <label for="comentarios">Comentarios<br/>
+                    <textarea id="comentarios" class="input-textarea" rows="4" cols="50"> </textarea>
+                </label> <br/>
+                
+                <label for="mails">Recibir mails sobre el siguiente interés<br/>
+                    <input id="mails" type="radio" name="Select" value="Bike">Noticias
+                </label>
+
+                <label for="mails-music">
+                    <input id="mails-music" type="radio" name="Select" value="No">Música
+                </label>
+
+                <label for="mails-cult">
+                    <input id="mails-cult" type="radio" name="Select" value="No">Cultura
+                </label>
+                <br/>
+                <input class="archivo" type="file" name="archivo">
+                <br/>
+                <input class="boton-submit" type="submit" value="Enviar">
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <div class="content-footer">
+            <div class="rotulo">
+                <p>Elifer L. Aponte Díaz</p>
+                <p> <strong>Materia:</strong> Maquetado y desarrollo web</p>
+                <p> <strong>Docente:</strong> Florencia Kotlar</p>
+            </div>
+            <div class="rrss">
+                <div class="contacto-icono">
+                    <p><img src="img/phone.png" alt="phone"> 508-764-021</p>
+                </div>
+                <div class="contacto-icono">
+                    <p><img src="img/email.png" alt="email"> info-dubai@dubai.com</p>
+                </div>
+                <div>
+                    <img class="icon" src="img/facebook.png" alt="Facebook"/>
+                    <img class="icon" src="img/instagram.png" alt="Instagram"/>
+                    <img class="icon" src="img/twitter.png" alt="Twitter"/>
+                    <img class="icon" src="img/youtube.png" alt="Youtube"/>
+                </div>
+            </div>
+
+        </div>    
+            <p class="creditos">© Este sitio es una entrega para un TP de primer cuatrimestre de la Escuela
+                Da Vinci con el año 2019.
+            </p>
+    </footer>
+</body>
+</html>
